@@ -27,8 +27,28 @@
         }
         header {
             text-align: center;
-            padding: 4rem 0;
+            padding: 3rem 0;
             border-bottom: 1px solid #334155;
+        }
+        .header-visuals {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            position: absolute;
+            left: 0;
+            max-height: 60px;
+            width: auto;
+        }
+        .banner {
+            max-width: 100%;
+            max-height: 120px;
+            width: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
         }
         h1 {
             font-size: 2.5rem;
@@ -72,10 +92,17 @@
             border-radius: 4px;
             font-weight: bold;
             margin-top: 1rem;
+            margin-right: 0.5rem;
             transition: background 0.3s;
         }
         .btn:hover {
             background-color: #0ea5e9;
+        }
+        .btn-secondary {
+            background-color: #10b981;
+        }
+        .btn-secondary:hover {
+            background-color: #059669;
         }
         footer {
             text-align: center;
@@ -85,11 +112,27 @@
             border-top: 1px solid #334155;
             margin-top: 2rem;
         }
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .header-visuals {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .logo {
+                position: static;
+                max-height: 50px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
+            <div class="header-visuals">
+                <!-- UPDATE THESE FILENAMES TO MATCH YOUR ACTUAL UPLOADS -->
+                <img src="images/cybersopho.png" alt="CyberSopho Logo" class="logo">
+                <img src="images/banner.jpg" alt="CyberSopho Banner" class="banner">
+            </div>
             <h1>CyberSopho</h1>
             <p class="tagline">Cybersecurity Consulting & Threat Intelligence</p>
             <a href="#contact" class="btn">Get in Touch</a>
@@ -121,10 +164,10 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>Ready to secure your infrastructure? Reach out to discuss your security requirements.</p>
-            <!-- Placeholder for Google Form Embed or Mailto Link -->
             <a href="mailto:cybersopho@yahoo.com" class="btn">Email Us</a>
-            <a href="https://forms.gle/jHDxXFaWNPwG8j5k7" class="btn" target="_blank" style="background-color: #10b981;">Contact Form</a>
+            <a href="https://forms.gle/jHDxXFaWNPwG8j5k7" class="btn btn-secondary" target="_blank">Contact Form</a>
         </section>
+
         <footer>
             <p>&copy; 2026 CyberSopho. All rights reserved.</p>
         </footer>
