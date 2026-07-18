@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI as the Attack Vector: Microsoft Copilot RCE Flaw | CyberSopho</title>
+    <meta name="description" content="Analysis of CVE-2026-48561, a critical remote code execution flaw in Microsoft Copilot.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-top: 2rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444; /* Red for critical risk */
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to CyberSopho</a>
+        
+        <div class="post-header">
+            <span class="post-date">July 14, 2026</span>
+            <h1>AI Becomes the Attack Vector: Microsoft Copilot RCE Flaw</h1>
+        </div>
+
+        <div class="post-content">
+            <p>Microsoft recently patched a record 570 security flaws, but one vulnerability stands out as a paradigm shift in AI risk.</p>
+
+            <div class="highlight-box">
+                <strong>CVE-2026-48561:</strong> A 9.6 CVSS critical remote code execution flaw in Microsoft Copilot allows attackers to execute arbitrary code over the network simply by hosting a malicious website. When a user visits that site, Microsoft Edge for Android automatically sends crafted prompts to Copilot, weaponizing the AI assistant itself.
+            </div>
+
+            <h2>The Architect’s View</h2>
+            <p>This is not a theoretical risk. This is an active exploitation pathway where the productivity tool enterprises trust becomes the backdoor into their systems.</p>
+            <p>For decades, enterprise security relied on predictable vendor risk ratings. That model is now obsolete. AI is shrinking the window between vulnerability discovery and weaponization to near zero. The era of AI-accelerated cyber warfare demands a fundamental shift in how we assess third-party AI integrations.</p>
+
+            <div class="source-link">
+                <strong>Source:</strong><br>
+                <a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank">Krebs on Security: Microsoft Patches a Record 570 Security Flaws</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
