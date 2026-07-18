@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La IA como Vector de Ataque: Vulnerabilidad RCE en Microsoft Copilot | CyberSopho</title>
+    <meta name="description" content="Análisis de CVE-2026-48561, una vulnerabilidad crítica de ejecución remota de código en Microsoft Copilot.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h2 {
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-top: 2rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver a CyberSopho</a>
+        <a href="copilot-rce-july-2026.html" class="lang-switch">🇬🇧 Read in English</a>
+        
+        <div class="post-header">
+            <span class="post-date">14 de julio de 2026</span>
+            <h1>La IA se Convierte en el Vector de Ataque: Vulnerabilidad RCE en Microsoft Copilot</h1>
+        </div>
+
+        <div class="post-content">
+            <p>Microsoft parchó recientemente un récord de 570 vulnerabilidades de seguridad, pero una destaca como un cambio de paradigma en el riesgo de la IA.</p>
+
+            <div class="highlight-box">
+                <strong>CVE-2026-48561:</strong> Una vulnerabilidad crítica de ejecución remota de código con puntuación CVSS de 9.6 en Microsoft Copilot permite a los atacantes ejecutar código arbitrario a través de la red simplemente alojando un sitio web malicioso. Cuando un usuario visita ese sitio, Microsoft Edge para Android envía automáticamente prompts manipulados a Copilot, convirtiendo al asistente de IA en el arma misma.
+            </div>
+
+            <h2>La Perspectiva del Arquitecto</h2>
+            <p>Esto no es un riesgo teórico. Esta es una vía de explotación activa donde la herramienta de productividad en la que confían las empresas se convierte en la puerta trasera de sus sistemas.</p>
+            <p>Durante décadas, la seguridad empresarial dependió de clasificaciones de riesgo predecibles de los proveedores. Ese modelo ahora está obsoleto. La IA está reduciendo la ventana entre el descubrimiento de vulnerabilidades y la weaponización a casi cero. La era de la guerra cibernética acelerada por IA exige un cambio fundamental en cómo evaluamos las integraciones de IA de terceros.</p>
+
+            <div class="source-link">
+                <strong>Fuente:</strong><br>
+                <a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/" target="_blank">Krebs on Security: Microsoft Patches a Record 570 Security Flaws</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
