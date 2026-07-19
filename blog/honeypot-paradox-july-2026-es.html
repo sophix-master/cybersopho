@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Paradoja del Honeypot: Filtraciones de Ransomware y Centralización de Datos | CyberSopho</title>
+    <meta name="description" content="Lo que una filtración de ransomware ruso nos enseña sobre los peligros de la centralización de datos y las políticas de registro de SIM.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h3 {
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver a CyberSopho</a>
+        <a href="honeypot-paradox-july-2026.html" class="lang-switch">🇬🇧 Read in English</a>
+        
+        <div class="post-header">
+            <span class="post-date">20 de julio de 2026</span>
+            <h1>La Paradoja del Honeypot: Lo que una filtración de ransomware ruso nos enseña sobre la centralización de datos</h1>
+        </div>
+
+        <div class="post-content">
+            <p>El ransomware ya no es solo un ciberdelito; es una industria B2B madura y altamente competitiva. Una investigación reciente sobre "The Gentlemen", actualmente el segundo grupo de Ransomware como Servicio (RaaS) más activo, revela conocimientos fascinantes sobre la economía criminal, las fallas de seguridad operativa y una lección crítica para las políticas de privacidad de datos en todo el mundo.</p>
+
+            <h3>1. La economía de la "confianza" criminal</h3>
+            <p>El grupo está reclutando afiliados de manera agresiva ofreciendo una división de ganancias de 90/10, socavando drásticamente el estándar de la industria de 80/20. Si bien esto acelera su crecimiento, destaca una paradoja masiva en el mundo del cibercrimen: ¿Cómo pueden los afiliados confiar en que el administrador no se quedará con el 100% del rescate? En el RaaS, la "confianza" es la vulnerabilidad definitiva, y los márgenes agresivos suelen ser el preludio de una inevitable "estafa de salida" (exit scam).</p>
+
+            <h3>2. El personaje vs. la realidad</h3>
+            <p>El administrador del grupo opera bajo alias como "Zeta88" y "Hastalamuerte", tomando prestada fuertemente la estética de la cultura narco mexicana y el movimiento de la "Santa Muerte". Sin embargo, la inteligencia de fuentes abiertas (OSINT) cuenta una historia diferente. A través de una meticulosa cadena de pivotes, los investigadores rastrearon estos alias hasta un único punto de anclaje: un número de teléfono. Ese número condujo a una base de datos filtrada del gobierno ruso, desenmascarando al operador como Alexander Yapaev, un ejecutivo de marketing de 36 años de Izhevsk, Rusia.</p>
+
+            <div class="highlight-box">
+                <strong>3. La Paradoja del Honeypot (La lección crítica):</strong> Este desenmascaramiento destaca una ironía peligrosa que es altamente relevante para los acontecimientos actuales en México. El gobierno mexicano está impulsando actualmente el registro obligatorio de líneas telefónicas, bajo la amenaza de cancelación por incumplimiento, con la premisa de prevenir la extorsión y el crimen organizado.
+                <br><br>
+                Sin embargo, la historia de la ciberseguridad prueba lo contrario. Cuando un estado fuerza la centralización de datos sensibles (CURP, biométricos, números de teléfono), no elimina el mercado negro; crea el honeypot (trampa) de alto valor definitivo. Como se ha visto en filtraciones masivas pasadas de bases de datos gubernamentales y de telecomunicaciones en México, estos datos centralizados inevitablemente se filtran. Una vez en manos criminales, permiten a los actores de amenazas hacer un pivote desde un simple número de teléfono hasta la identidad completa de una víctima, potenciando la misma extorsión dirigida que la política pretendía detener.
+            </div>
+
+            <p>El jefe del ransomware ruso fue desenmascarado porque su gobierno recopiló sus datos. Debemos preguntarnos: ¿estamos construyendo escudos para los ciudadanos o catálogos para los criminales?</p>
+
+            <div class="source-link">
+                <strong>Fuente:</strong><br>
+                <a href="https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/" target="_blank">Krebs on Security: Who Runs the Ransomware Group ‘The Gentlemen?’</a><br>
+                <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
