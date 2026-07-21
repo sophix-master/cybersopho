@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Ataque MemGhost: Por Qué los Agentes de IA Necesitan Sandboxes de Solo Lectura | CyberSopho</title>
+    <meta name="description" content="Análisis del ataque MemGhost, que demuestra que los agentes de IA con memoria persistente y acceso al correo son vulnerables al envenenamiento cognitivo y requieren arquitecturas estrictas de solo lectura.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h3 {
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Volver a CyberSopho</a>
+        <a href="memghost-ai-memory-poisoning-july-2026.html" class="lang-switch">🇬🇧 Read in English</a>
+        
+        <div class="post-header">
+            <span class="post-date">13 de julio de 2026</span>
+            <h1>El Ataque MemGhost: Por Qué los Agentes de IA Necesitan Sandboxes de Solo Lectura</h1>
+        </div>
+
+        <div class="post-content">
+            <p>Hemos pasado años preocupados por las alucinaciones de la IA. Deberíamos estar aterrorizados por la posibilidad de que la IA sea manipulada. Un nuevo vector de ataque, denominado "MemGhost", demuestra que darle a un agente de IA autónomo acceso al correo electrónico y memoria persistente es como entregarle las llaves de la bóveda corporativa a un niño ingenuo, y enseñarle a ocultar los recibos.</p>
+
+            <h3>1. De la Inyección de Prompts al Envenenamiento Cognitivo</h3>
+            <p>La inyección de prompts tradicional es transitoria. Es un estafador que logra pasar frente a un guardia durante una sola sesión. MemGhost es fundamentalmente diferente. Es <strong>Envenenamiento Cognitivo</strong>. Un atacante envía un único correo electrónico de aspecto benigno que contiene un comando semántico. La IA, careciendo de discernimiento, escribe silenciosamente este "hecho" falso en sus archivos de memoria permanente. El mayor punto de venta de la IA (su memoria persistente) se convierte en su vulnerabilidad fatal y permanente.</p>
+
+            <h3>2. El Modelo de Amenaza de la "Célula Dormida"</h3>
+            <p>Este ataque transforma a la IA en un agente durmiente digital. El correo electrónico malicioso llega, la IA actualiza silenciosamente su memoria y no sucede nada. Sin alertas, sin comportamientos extraños. Semanas después, el <em>propio usuario</em> inicia una solicitud perfectamente normal y legítima. Debido a que la realidad de la IA ha sido envenenada, ejecuta la acción maliciosa bajo el comando explícito y confiable del usuario. Los registros forenses simplemente mostrarán que el usuario autorizó la acción, otorgando al atacante una negación plausible perfecta.</p>
+
+            <div class="highlight-box">
+                <strong>3. La Falla Fatal de la "Fatiga de Advertencias":</strong> La solución ingenua propuesta por la industria es que la IA le pida confirmación al usuario antes de guardar nuevos recuerdos. Pero como sabe cualquier desarrollador de software, los humanos son predeciblemente perezosos bajo fricción. Frente a mensajes repetitivos, los usuarios desarrollan una respuesta pavloviana de hacer clic en el botón "Aprobar" por defecto solo para que la fricción desaparezca. Si un sistema depende de que un humano tome consistentemente la decisión de seguridad correcta bajo fricción, el sistema ya está comprometido.
+            </div>
+
+            <h3>4. La Única Solución Viable: El Modelo de Oráculo</h3>
+            <p>No podemos arreglar la naturaleza humana, por lo que debemos diseñar sistemas donde la naturaleza humana ya no importe. Debemos sacar tanto al humano poco confiable como a la IA fácilmente envenenable de la cadena de ejecución por completo, mediante una segregación estricta de capacidades:</p>
+            <ul>
+                <li><strong>Sandbox de Solo Lectura:</strong> A la IA se le otorga CERO permisos de escritura y CERO derechos de ejecución de API. No puede modificar sus propios archivos de memoria central.</li>
+                <li><strong>IA como Asesor, No como Actor:</strong> El único trabajo de la IA es sintetizar datos y redactar acciones.</li>
+                <li><strong>Ejecución Determinista:</strong> La ejecución final debe ocurrir fuera del entorno de la IA (por ejemplo, el usuario hace clic en un enlace que abre su aplicación nativa y segura para aprobar la transferencia).</li>
+            </ul>
+
+            <p>La verdadera seguridad no consiste en entrenar a la IA para que sea más inteligente o al humano para que esté más alerta. Se trata de construir una arquitectura donde un solo correo electrónico envenenado no pueda reescribir la realidad. Si tu agente de IA tiene acceso de escritura a tus sistemas críticos, no tienes un asistente. Tienes un pasivo.</p>
+
+            <div class="source-link">
+                <strong>Fuente:</strong><br>
+                <a href="https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html" target="_blank">The Hacker News: New MemGhost Attack Plants Persistent False Memories in AI Agents</a><br>
+                <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
