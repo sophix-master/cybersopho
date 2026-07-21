@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MemGhost Attack: Why AI Agents Need Read-Only Sandboxes | CyberSopho</title>
+    <meta name="description" content="Analysis of the MemGhost attack, proving that AI agents with persistent memory and email access are vulnerable to cognitive poisoning and require strict read-only architectures.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h3 {
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to CyberSopho</a>
+        <a href="memghost-ai-memory-poisoning-july-2026-es.html" class="lang-switch">🇪🇸 Leer en Español</a>
+        
+        <div class="post-header">
+            <span class="post-date">July 13, 2026</span>
+            <h1>The MemGhost Attack: Why AI Agents Need Read-Only Sandboxes</h1>
+        </div>
+
+        <div class="post-content">
+            <p>We have spent years worrying about AI hallucinating. We should be terrified of AI being gaslit. A newly documented attack vector, dubbed "MemGhost," proves that giving an autonomous AI agent email access and persistent memory is like handing a naive child the keys to the corporate vault—and teaching them to hide the receipts.</p>
+
+            <h3>1. From Prompt Injection to Cognitive Poisoning</h3>
+            <p>Traditional prompt injection is transient. It is a con artist talking their way past a guard for a single session. MemGhost is fundamentally different. It is <strong>Cognitive Poisoning</strong>. An attacker sends a single, benign-looking email containing a semantic command. The AI, lacking discernment, quietly writes this false "fact" into its permanent memory files. The AI’s greatest selling point—its persistent memory—becomes its fatal, permanent vulnerability.</p>
+
+            <h3>2. The "Sleeper Cell" Threat Model</h3>
+            <p>This attack transforms the AI into a digital sleeper agent. The malicious email arrives, the AI quietly updates its memory, and nothing happens. No alerts, no strange behavior. Weeks later, the <em>user themselves</em> initiates a perfectly normal, legitimate request. Because the AI's reality has been poisoned, it executes the malicious action at the user's explicit, trusted command. Forensic logs will simply show the user authorizing the action, granting the attacker perfect plausible deniability.</p>
+
+            <div class="highlight-box">
+                <strong>3. The Fatal Flaw of "Warning Fatigue":</strong> The industry’s naive proposed fix is to have the AI ask the user for confirmation before saving new memories. But as any software developer knows, humans are predictably lazy under friction. Faced with repetitive prompts, users develop a Pavlovian response to click the default "Approve" button just to make the friction go away. If a system relies on a human to consistently make the right security decision under friction, the system is already compromised.
+            </div>
+
+            <h3>4. The Only Viable Solution: The Oracle Model</h3>
+            <p>We cannot fix human nature, so we must design systems where human nature no longer matters. We must take both the unreliable human and the easily-poisoned AI out of the execution chain entirely via strict capability segregation:</p>
+            <ul>
+                <li><strong>Read-Only Sandbox:</strong> The AI is granted ZERO write permissions and ZERO API execution rights. It cannot modify its own core memory files.</li>
+                <li><strong>AI as Advisor, Not Actor:</strong> The AI’s only job is to synthesize data and draft actions.</li>
+                <li><strong>Deterministic Execution:</strong> The final execution must happen outside the AI’s environment (e.g., the user clicks a link that opens their native, secure app to approve the transfer).</li>
+            </ul>
+
+            <p>True security isn’t about training the AI to be smarter or the human to be more vigilant. It’s about building an architecture where a single poisoned email cannot rewrite reality. If your AI agent has write access to your critical systems, you don’t have an assistant. You have a liability.</p>
+
+            <div class="source-link">
+                <strong>Source:</strong><br>
+                <a href="https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html" target="_blank">The Hacker News: New MemGhost Attack Plants Persistent False Memories in AI Agents</a><br>
+                <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
