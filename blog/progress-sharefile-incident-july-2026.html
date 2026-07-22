@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Software ShareFile Incident: The High Cost of Security Through Obscurity | CyberSopho</title>
+    <meta name="description" content="Analysis of the Progress Software ShareFile Storage Zone Controller shutdown order, highlighting the severe risks of opaque incident handling and security through obscurity.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h3 {
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to CyberSopho</a>
+        <a href="progress-sharefile-incident-july-2026-es.html" class="lang-switch">🇪🇸 Leer en Español</a>
+        
+        <div class="post-header">
+            <span class="post-date">July 10, 2026</span>
+            <h1>Progress Software ShareFile Incident: The High Cost of Security Through Obscurity</h1>
+        </div>
+
+        <div class="post-content">
+            <p>When a vendor tells you to pull the plug without explaining why, you are not dealing with a standard security incident. You are dealing with a critical transparency failure.</p>
+            
+            <p>On July 10, 2026, Progress Software ordered customers to immediately shut down their self-hosted ShareFile Storage Zone Controllers due to a credible external security threat. The risks exposed by this handling are severe and systemic.</p>
+
+            <h3>1. The Complete Lack of Transparency</h3>
+            <p>No CVE was issued. No technical details were provided. No Indicators of Compromise were shared. Customers were left to operate in the dark, forced to make critical infrastructure decisions without a clear threat model.</p>
+
+            <h3>2. The Dangerous Illusion of Safety</h3>
+            <p>The vendor claimed there was no evidence of unauthorized access to any customer account or data. This is a classic deflection. Because these controllers are self-hosted on private infrastructure, the vendor has zero telemetry or visibility into them. They cannot possibly know if a specific customer environment was breached or pivoted from.</p>
+
+            <div class="highlight-box">
+                <strong>3. The Total Shift of Operational Burden:</strong> By withholding threat intelligence, the vendor forces the customer to blindly treat their own server as a potential crime scene. Organizations are left guessing at the blast radius and scrambling to preserve logs, entirely on their own.
+            </div>
+
+            <h3>4. A Corporate Pattern of Opacity</h3>
+            <p>This cannot be viewed in isolation. Progress Software’s handling of past incidents has been widely criticized for being slow and opaque. When a company acquires a product with a known security pedigree and then degrades that transparency, it signals a cultural problem. It suggests that opacity and delayed disclosure are baked into their incident response playbook.</p>
+
+            <p>When evaluating critical infrastructure partners, transparency during a crisis is the ultimate test of reliability. Security through obscurity fundamentally undermines vendor trustworthiness.</p>
+
+            <p style="margin-top: 2rem; font-weight: bold; color: var(--accent-color);">#cybersecurity</p>
+
+            <div class="source-link">
+                <strong>Source:</strong><br>
+                <a href="https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html" target="_blank">The Hacker News: URGENT - Progress Tells ShareFile Customers to Shut Down Storage Zone Controllers Over Security Threat</a><br>
+                <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
