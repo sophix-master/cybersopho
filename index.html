@@ -38,12 +38,14 @@ description: Expert cybersecurity consulting, threat intelligence, and secure da
     <h2>Latest Insights</h2>            
     <div class="services-grid">
         {% for post in site.posts %}
+        {% unless post.url contains '-es' %}
         <div class="service-card">
             <h3>{{ post.title }}</h3>
             <p style="color: #94a3b8; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
             <p>{{ post.description }}</p>
             <a href="{{ post.url | relative_url }}" class="btn">Read Full Analysis</a>
         </div>
+        {% endunless %}
         {% endfor %}
     </div>
 </section>
