@@ -1,268 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberSopho | Cybersecurity Consulting & Threat Intelligence</title>
-    <meta name="description" content="Expert cybersecurity consulting, threat intelligence, and secure data migration services.">
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --text-color: #e2e8f0;
-            --accent-color: #38bdf8;
-            --card-bg: #1e293b;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid #334155;
-        }
-        .header-visuals {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-        .logo {
-            position: absolute;
-            left: 10px;
-            top: 80%;
-            transform: translateY(-50%);
-            max-width: 200px;
-            height: auto;
-            z-index: 10;
-        }
-        .banner {
-            max-width: auto;
-            max-height: auto;
-            width: auto;
-            object-fit: cover;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--accent-color);
-        }
-        .tagline {
-            font-size: 1.2rem;
-            color: #94a3b8;
-        }
-        section {
-            padding: 3rem 0;
-        }
-        h2 {
-            color: var(--accent-color);
-            border-left: 4px solid var(--accent-color);
-            padding-left: 1rem;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        .service-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid #334155;
-        }
-        .service-card h3 {
-            margin-top: 0;
-            color: #f8fafc;
-        }
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--bg-color);
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin-top: 1rem;
-            margin-right: 0.5rem;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background-color: #0ea5e9;
-        }
-        .btn-secondary {
-            background-color: #10b981;
-        }
-        .btn-secondary:hover {
-            background-color: #059669;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            color: #64748b;
-            font-size: 0.9rem;
-            border-top: 1px solid #334155;
-            margin-top: 2rem;
-        }
-        @media (max-width: 600px) {
-            .header-visuals {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .logo {
-                position: static;
-                max-height: 50px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="header-visuals">
-                <img src="images/cybersopho.png" alt="CyberSopho Logo" class="logo">
-                <img src="images/banner.jpg" alt="CyberSopho Banner" class="banner">
-            </div>
-            <h1>CyberSopho</h1>
-            <p class="tagline">Cybersecurity Consulting & Threat Intelligence</p>
-            <a href="#contact" class="btn">Get in Touch</a>
-        </header>
+---
+layout: default
+title: Home
+description: Expert cybersecurity consulting, threat intelligence, and secure data migration services.
+---
 
-        <section id="about">
-            <h2>About</h2>
-            <p>CyberSopho provides specialized cybersecurity consulting, focusing on threat intelligence, secure data migration, and infrastructure hardening. We help organizations identify vulnerabilities before they can be exploited.</p>
-        </section>
+<section id="about">
+    <h2>About</h2>
+    <p>CyberSopho provides specialized cybersecurity consulting, focusing on threat intelligence, secure data migration, and infrastructure hardening. We help organizations identify vulnerabilities before they can be exploited.</p>
+</section>
 
-        <section id="services">
-            <h2>Core Capabilities</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Threat Intelligence</h3>
-                    <p>Analysis of regional and global threat landscapes, including TTP mapping and dark web ecosystem monitoring.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Secure Data Migration</h3>
-                    <p>End-to-end security validation for complex enterprise data transfers and legacy system modernization.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Security Assessments</h3>
-                    <p>Targeted vulnerability assessments and architecture reviews for startups and small-to-medium teams.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Ready to secure your infrastructure? Reach out to discuss your security requirements.</p>
-            <a href="mailto:cybersopho@yahoo.com" class="btn">Email Us</a>
-            <a href="https://forms.gle/jHDxXFaWNPwG8j5k7" class="btn btn-secondary" target="_blank">Contact Form</a>
-        </section>
-        
-        <section id="blog">
-            <h2>Latest Insights</h2>            
-            <div class="services-grid">
-                <!-- Newest Post -->
-                <div class="service-card">
-                    <h3>The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vectors</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 14, 2026</p>
-                    <p>Analysis of the year-long ShinyHunters campaign, highlighting the severe risks of machine identity blind spots and speculative strategies to cope with API abuse.</p>
-                    <a href="blog/shinyhunters-salesforce-campaign-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 1 -->
-                <div class="service-card">
-                    <h3>CrashStealer macOS Malware: The Illusion of Verified Trust</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 13, 2026</p>
-                    <p>Analysis of the CrashStealer information stealer, highlighting the severe risks of weaponized Apple notarization and speculative strategies to cope with the collapse of endpoint trust.</p>
-                    <a href="blog/crashstealer-macos-malware-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 2 -->
-                <div class="service-card">
-                    <h3>The AI Code Generation Crisis: When Velocity Breaks Security</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 25, 2026</p>
-                    <p>Analysis of the systemic risks of AI-accelerated software development and speculative strategies to cope with the collapse of human code review.</p>
-                    <a href="blog/ai-code-generation-crisis-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>                
-                <!-- Previous Post 3 -->
-                <div class="service-card">
-                    <h3>HalluSquatting: AI Coding Assistant Exploitation</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 8, 2026</p>
-                    <p>Analysis of the HalluSquatting attack vector, highlighting the severe risks of AI hallucinations in coding assistants and automated software supply chain exploitation.</p>
-                    <a href="blog/hallusquatting-ai-coding-assistants-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>                
-                <!-- Previous Post 4 -->
-                <div class="service-card">
-                    <h3>GigaWiper Windows Backdoor: Legacy Paradigms Under Fire</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 9, 2026</p>
-                    <p>Analysis of the GigaWiper backdoor bundle, highlighting the severe risks of legacy operating system paradigms and the phenomenal destructive power of modern multi-payload malware.</p>
-                    <a href="blog/gigawiper-windows-backdoor-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>                
-                <!-- Previous Post 5 -->
-                <div class="service-card">
-                    <h3>Progress Software ShareFile: Security Through Obscurity</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 10, 2026</p>
-                    <p>Analysis of the Progress Software ShareFile Storage Zone Controller shutdown order, highlighting the severe risks of opaque incident handling and vendor transparency failures.</p>
-                    <a href="blog/progress-sharefile-incident-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>                
-                <!-- Previous Post 6 -->
-                <div class="service-card">
-                    <h3>The MemGhost Attack: AI Memory Poisoning</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 13, 2026</p>
-                    <p>Analysis of the MemGhost attack, proving that AI agents with persistent memory and email access are vulnerable to cognitive poisoning and require strict read-only architectures.</p>
-                    <a href="blog/memghost-ai-memory-poisoning-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 7 -->
-                <div class="service-card">
-                    <h3>Meta’s AI Support Bot Exploit: The Paradigm Shift</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">June 2, 2026</p>
-                    <p>Analysis of how hackers tricked Meta's AI customer support bot into resetting passwords, revealing the new era of algorithmic social engineering.</p>
-                    <a href="blog/meta-ai-account-takeover-june-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 8 -->
-                <div class="service-card">
-                    <h3>The Honeypot Paradox: Ransomware Leaks and Data Centralization</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 20, 2026</p>
-                    <p>What a Russian ransomware leak teaches us about the dangers of mandatory data centralization and SIM registration policies in Mexico.</p>
-                    <a href="blog/honeypot-paradox-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 9 -->
-                <div class="service-card">
-                    <h3>CISA GitHub Leak: A Six-Month Exposure</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 13, 2026</p>
-                    <p>Analysis of the recent CISA GitHub repository leak exposing AWS GovCloud keys and plaintext passwords for six months despite automated warnings.</p>
-                    <a href="blog/cisa-github-leak-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-                <!-- Previous Post 10 -->
-                <div class="service-card">
-                    <h3>AI Becomes the Attack Vector: Microsoft Copilot RCE Flaw</h3>
-                    <p style="color: #94a3b8; font-size: 0.9rem;">July 14, 2026</p>
-                    <p>Analysis of CVE-2026-48561, a critical 9.6 CVSS remote code execution flaw in Microsoft Copilot that weaponizes the AI assistant itself.</p>
-                    <a href="blog/copilot-rce-july-2026.html" class="btn">Read Full Analysis</a>
-                </div>
-            </div>
-        </section>
-        
-        <footer>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-                <a href="https://www.linkedin.com/company/cybersopho" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-color); text-decoration: none; font-weight: bold; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                    <!-- LinkedIn SVG Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    Follow CyberSopho on LinkedIn
-                </a>
-                <p style="color: #64748b; font-size: 0.9rem; margin: 0;">&copy; 2026 CyberSopho. All rights reserved.</p>
-            </div>
-        </footer>
+<section id="services">
+    <h2>Core Capabilities</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Threat Intelligence</h3>
+            <p>Analysis of regional and global threat landscapes, including TTP mapping and dark web ecosystem monitoring.</p>
+        </div>
+        <div class="service-card">
+            <h3>Secure Data Migration</h3>
+            <p>End-to-end security validation for complex enterprise data transfers and legacy system modernization.</p>
+        </div>
+        <div class="service-card">
+            <h3>Security Assessments</h3>
+            <p>Targeted vulnerability assessments and architecture reviews for startups and small-to-medium teams.</p>
+        </div>
     </div>
-</body>
-</html>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Ready to secure your infrastructure? Reach out to discuss your security requirements.</p>
+    <a href="mailto:cybersopho@yahoo.com" class="btn">Email Us</a>
+    <a href="https://forms.gle/jHDxXFaWNPwG8j5k7" class="btn btn-secondary" target="_blank">Contact Form</a>
+</section>
+
+<section id="blog">
+    <h2>Latest Insights</h2>            
+    <div class="services-grid">
+        {% for post in site.posts %}
+        <div class="service-card">
+            <h3>{{ post.title }}</h3>
+            <p style="color: #94a3b8; font-size: 0.9rem;">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p>{{ post.description }}</p>
+            <a href="{{ post.url | relative_url }}" class="btn">Read Full Analysis</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
