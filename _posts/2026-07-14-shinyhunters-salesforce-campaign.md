@@ -8,8 +8,8 @@ description: "Analysis of the year-long ShinyHunters campaign, highlighting the 
 <a href="/" class="back-link">← Back to CyberSopho</a>
 
 <div class="post-header">
-    <span class="post-date">July 14, 2026</span>
-    <h1>The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vectors</h1>
+<span class="post-date">July 14, 2026</span>
+<h1>The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vectors</h1>
 </div>
 
 <div class="post-content">
