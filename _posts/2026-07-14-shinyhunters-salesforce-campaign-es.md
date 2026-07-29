@@ -5,7 +5,7 @@ date: 2026-07-14
 description: "Análisis de la campaña de un año de ShinyHunters en Salesforce, destacando los graves riesgos de los puntos ciegos de identidad de máquina y estrategias especulativas para afrontar el abuso de API."
 ---
 
-<a href="/2026/07/14/shinyhunters-salesforce-campaign/" class="lang-switch">🇬 Read in English</a>
+<a href="/2026/07/14/shinyhunters-salesforce-campaign/" class="lang-switch">🇬🇧 Read in English</a>
 
 <div class="post-header">
     <span class="post-date">14 de julio de 2026</span>
