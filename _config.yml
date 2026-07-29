@@ -4,3 +4,5 @@ url: "https://cybersopho.top"
 baseurl: ""
 markdown: kramdown
 permalink: pretty
+plugins:
+  - jekyll-seo-tag
