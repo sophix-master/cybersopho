@@ -4,8 +4,7 @@ title: "The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vec
 date: 2026-07-14
 description: "Analysis of the year-long ShinyHunters campaign, highlighting the severe risks of machine identity blind spots and speculative strategies to cope with API abuse."
 ---
-
-<a href="/" class="back-link">← Back to CyberSopho</a>
+<a href="/2026/07/14/shinyhunters-salesforce-campaign-es/" class="lang-switch"> Leer en Español</a>
 
 <div class="post-header">
 <span class="post-date">July 14, 2026</span>
