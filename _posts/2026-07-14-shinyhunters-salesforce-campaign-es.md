@@ -6,7 +6,7 @@ description: "Análisis de la campaña de un año de ShinyHunters en Salesforce,
 ---
 
 <a href="/" class="back-link">← Volver a CyberSopho</a>
-<a href="/2026/07/14/shinyhunters-salesforce-campaign/" class="lang-switch">🇬🇧 Read in English</a>
+<a href="/2026/07/14/shinyhunters-salesforce-campaign/" class="lang-switch">🇬 Read in English</a>
 
 <div class="post-header">
     <span class="post-date">14 de julio de 2026</span>
