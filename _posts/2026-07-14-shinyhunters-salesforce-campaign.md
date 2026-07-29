@@ -5,6 +5,16 @@ date: 2026-07-14
 description: "Analysis of the year-long ShinyHunters campaign, highlighting the severe risks of machine identity blind spots and speculative strategies to cope with API abuse."
 ---
 
+<a href="/" class="back-link">← Back to CyberSopho</a>
+<a href="/2026/07/14/shinyhunters-salesforce-campaign-es/" class="lang-switch">🇪 Leer en Español</a>
+
+<div class="post-header">
+    <span class="post-date">July 14, 2026</span>
+    <h1>The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vectors</h1>
+</div>
+
+<div class="post-content">
+
 The illusion of perimeter security is shattered when the attack originates from within the trusted zone. Recent intelligence reveals a year-long campaign where threat actors infiltrated corporate environments without exploiting a single platform flaw, relying entirely on pre-existing organizational trust.
 
 The attack vectors expose severe systemic risks: social engineering tactics tricking employees into granting malicious OAuth consent, the theft of integration tokens from compromised third-party vendors, and the exploitation of misconfigured guest access to bypass authentication entirely. Because these activities leverage pre-authorized machine identities, they seamlessly blend into legitimate business operations, rendering traditional human-centric monitoring useless.
@@ -37,4 +47,6 @@ The perimeter has moved from the network edge to the API gateway. Allowing machi
 <strong>Source:</strong><br>
 <a href="https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html" target="_blank">The Hacker News: Microsoft Maps Three Salesforce Attack Paths Tied to a Year of ShinyHunters Activity</a><br>
 <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+</div>
+
 </div>
