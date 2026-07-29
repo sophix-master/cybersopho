@@ -12,7 +12,7 @@ description: "Análisis de la campaña de un año de ShinyHunters en Salesforce,
     <h1>La Campaña ShinyHunters en Salesforce: Cuando las Integraciones de Confianza se Convierten en Vectores de Ataque</h1>
 </div>
 
-<div class="post-content">
+<div class="post-content" markdown="1">
 
 La ilusión de la seguridad perimetral se desvanece cuando el ataque se origina desde dentro de la zona de confianza. Inteligencia reciente revela una campaña de un año de duración en la que actores de amenazas infiltraron entornos corporativos sin explotar una sola falla de la plataforma, confiando enteramente en la confianza organizacional preexistente.
 
