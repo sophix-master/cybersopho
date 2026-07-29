@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ShinyHunters Salesforce Campaign: When Trusted Integrations Become Attack Vectors | CyberSopho</title>
+    <meta name="description" content="Analysis of the year-long ShinyHunters Salesforce campaign, highlighting the severe risks of machine identity blind spots and speculative strategies to cope with API abuse.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .back-link {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-switch {
+            display: inline-block;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .lang-switch:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+        .post-header {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .post-date {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-top: 0.5rem;
+        }
+        .post-content h3 {
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .post-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        .highlight-box {
+            background-color: var(--card-bg);
+            border-left: 4px solid #ef4444;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+        }
+        .source-link {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #334155;
+        }
+        .source-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to CyberSopho</a>
+        <a href="shinyhunters-salesforce-campaign-july-2026-es.html" class="lang-switch">🇪🇸 Leer en Español</a>
+        
+        <div class="post-header">
+            <span class="post-date">July 14, 2026</span>
+            <h1>The ShinyHunters Salesforce Campaign: When Trusted Integrations Become Attack Vectors</h1>
+        </div>
+
+        <div class="post-content">
+            <p>The illusion of perimeter security is shattered when the attack originates from within the trusted zone. Recent intelligence reveals a year-long campaign where threat actors infiltrated corporate environments without exploiting a single platform flaw, relying entirely on pre-existing organizational trust.</p>
+            
+            <p>The attack vectors expose severe systemic risks: social engineering tactics tricking employees into granting malicious OAuth consent, the theft of integration tokens from compromised third-party vendors, and the exploitation of misconfigured guest access to bypass authentication entirely. Because these activities leverage pre-authorized machine identities, they seamlessly blend into legitimate business operations, rendering traditional human-centric monitoring useless.</p>
+
+            <h3>Speculative Strategies to Cope with the Machine Identity Blind Spot</h3>
+            <p>If traditional authentication logs cannot detect API abuse, organizations must fundamentally shift from static trust to continuous, behavior-based verification for all non-human identities.</p>
+
+            <div class="highlight-box">
+                <strong>1. Behavioral Baselining for Connected Apps:</strong> Machine identities need their own security paradigm. Security tools must monitor API query volumes and data access patterns for every connected app. If a trusted integration suddenly queries 50,000 records via SOQL instead of its normal baseline, it must be flagged and blocked, regardless of token validity.
+            </div>
+
+            <h3>2. Strict OAuth Scope Limitation and Zero Trust for Vendors</h3>
+            <p>Transitive trust is a massive liability. Every connected app must be treated as a potential compromise vector. Organizations must enforce strict, least-privilege OAuth scopes and implement automated, policy-driven revocation for any integration that has remained dormant for a set period (e.g., 90 days) to combat identity sprawl.</p>
+
+            <h3>3. API-Level Monitoring and Governance</h3>
+            <p>The signal lives in what happens after access is granted. Deploying advanced cloud security posture management (CSPM) tools that provide connected-app attribution and real-time event monitoring is critical. The focus must shift from "Did this app authenticate?" to "Is this app's current behavior normal for this specific tenant?"</p>
+
+            <h3>4. Rigorous Guest and Anonymous Access Audits</h3>
+            <p>Attackers will exploit legitimate system features, such as GraphQL cursor-based pagination, to scrape data if guest roles are over-permissioned. Continuous, automated auditing of anonymous and guest access roles in frameworks like Experience Cloud is mandatory to prevent data exfiltration without traditional authentication.</p>
+
+            <p>The perimeter has moved from the network edge to the API gateway. Allowing machine identities to operate as unmonitored, over-permissioned ghosts in the machine is no longer a viable business risk. The only durable fix is to assume breach and verify every action.</p>
+
+            <p style="margin-top: 2rem; font-weight: bold; color: var(--accent-color);">#cybersecurity</p>
+
+            <div class="source-link">
+                <strong>Source:</strong><br>
+                <a href="https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html" target="_blank">The Hacker News: Microsoft Maps Three Salesforce Attack Paths Tied to a Year of ShinyHunters Activity</a><br>
+                <a href="https://cybersopho.top" target="_blank">https://cybersopho.top</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
