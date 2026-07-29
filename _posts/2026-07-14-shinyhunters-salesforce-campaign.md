@@ -12,7 +12,7 @@ description: "Analysis of the year-long ShinyHunters campaign, highlighting the 
 <h1>The ShinyHunters Salesforce Campaign: Trusted Integrations as Attack Vectors</h1>
 </div>
 
-<div class="post-content">
+<div class="post-content" markdown="1">
 
 The illusion of perimeter security is shattered when the attack originates from within the trusted zone. Recent intelligence reveals a year-long campaign where threat actors infiltrated corporate environments without exploiting a single platform flaw, relying entirely on pre-existing organizational trust.
 
