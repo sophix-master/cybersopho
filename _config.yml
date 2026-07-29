@@ -1,7 +1,6 @@
 title: CyberSopho
 description: Expert cybersecurity consulting, threat intelligence, and secure data migration services.
-url: "https://cybersopho.top" # Update this to your actual GitHub Pages URL if different
-baseurl: "" # Leave empty if your site is at username.github.io
+url: "https://cybersopho.top"
+baseurl: ""
 markdown: kramdown
-plugins:
-  - jekyll-seo-tag
+permalink: pretty
