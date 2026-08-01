@@ -30,7 +30,7 @@ description: "Analysis of a recent campaign where malicious npm packages disguis
 </div>
 
 <h3>5. Strategic Defenses for a Client-Side Threat</h3>
-<p>Mitigating this class of attack requires moving beyond static code analysis. Organizations and educational institutions must implement strict Content Security Policies (CSP) to block unauthorized cross-origin script execution. Furthermore, enforcing Subresource Integrity (SRI) for all external scripts and deploying DNS-level blocking for known malicious monetization and script hosts are non-n negotiable baseline controls. For affected users, clearing browser cache, local storage, and unregistering lingering service workers is the only way to break the persistence mechanism.</p>
+<p>Mitigating this class of attack requires moving beyond static code analysis. Organizations and educational institutions must implement strict Content Security Policies (CSP) to block unauthorized cross-origin script execution. Furthermore, enforcing Subresource Integrity (SRI) for all external scripts and deploying DNS-level blocking for known malicious monetization and script hosts are non negotiable baseline controls. For affected users, clearing browser cache, local storage, and unregistering lingering service workers is the only way to break the persistence mechanism.</p>
 
 <p>As long as public package registries can be abused as free Content Delivery Networks for client-side applications, the attack surface will continue to expand far beyond the traditional build environment. Defenders must adapt their monitoring to detect anomalous runtime behavior, not just static code vulnerabilities.</p>
 
