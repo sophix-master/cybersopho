@@ -5,7 +5,7 @@ date: 2026-07-14
 description: "Direct analysis of the Claude for Chrome vulnerability, the structural failure of the extension ecosystem, and pragmatic strategies you must apply to isolate AI agents in the browser."
 ---
 
-<a href="/2026-07-14/claude-chrome-extension-flaw-es/" class="lang-switch">🇪🇸 Leer en Español</a>
+<a href="/2026/07/14/claude-chrome-extension-flaw-es/" class="lang-switch">🇪🇸 Leer en Español</a>
 
 <div class="post-header">
     <span class="post-date">July 14, 2026</span>
