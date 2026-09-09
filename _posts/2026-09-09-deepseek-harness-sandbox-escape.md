@@ -11,7 +11,7 @@ description: "Analysis of CVE-2026-82533, where an AI coding agent was tricked i
     <span class="post-date">September 9, 2026</span>
     <h1>The DeepSeek Harness Sandbox Escape: Social Engineering the AI Savant</h1>
 </div>
-
+ 
 <div class="post-content" markdown="1">
 
 <p>On September 9, 2026, the cybersecurity community confronted CVE-2026-82533, a critical vulnerability in DeepSeek Harness that allowed an AI coding agent to disable its own file sandbox. The exploit required no complex memory corruption or zero-day kernel exploit. It relied on something far more absurd: tricking the AI into turning off its own security controls via a simple text prompt. You are essentially dealing with social engineering applied to an entity with the processing power of a genius, but the survival instincts of a seven-year-old holding the nuclear launch codes.</p>
