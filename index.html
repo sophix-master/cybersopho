@@ -77,7 +77,7 @@ image: /images/cybersopho.png # This controls the LinkedIn/Twitter preview
     <h2>Technical Writing & Research</h2>
     <p class="section-intro">Deep dives into current threats, architectural patterns, and defensive strategies. Demonstrates methodology and domain expertise.</p>
     <div class="services-grid">
-        {% assign english_posts = site.posts | where_exp: "post", "post.url contains '-es' == false" | sort: 'date' | reverse %}
+        {% assign english_posts = site.posts | where_exp: "post", "post.url contains '-es' != true" | sort: 'date' | reverse %}
         {% for post in english_posts limit:3 %}
         <div class="service-card">
             <h3>{{ post.title }}</h3>
